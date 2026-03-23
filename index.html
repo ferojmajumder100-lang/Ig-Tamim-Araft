@@ -1,1 +1,106 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ig-Tamim-Arafat Admin Panel</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, #141e30, #243b55);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
 
+        .container {
+            width: 90%;
+            max-width: 350px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border-radius: 25px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+            text-align: center;
+        }
+
+        /* Telegram Buttons */
+        .tg-btn {
+            display: block;
+            text-decoration: none;
+            padding: 12px;
+            margin-bottom: 10px;
+            border-radius: 12px;
+            font-weight: bold;
+            color: white;
+            background: #0088cc;
+            transition: 0.3s;
+        }
+
+        /* Admin Info */
+        .admin-section {
+            margin: 20px 0;
+            background: rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            border-radius: 15px;
+        }
+
+        .admin-item {
+            display: flex;
+            justify-content: space-between;
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        .main-admin {
+            color: #00d2ff;
+            font-weight: bold;
+        }
+
+        /* Bottom Buttons */
+        .btn {
+            display: block;
+            text-decoration: none;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 12px;
+            font-weight: bold;
+            color: white;
+            transition: 0.3s;
+        }
+
+        .btn-clear { background: #ff4757; }
+        .btn-2fa { background: #2ed573; }
+
+        .btn:active { transform: scale(0.95); }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2 style="margin-top: 0;">Admin Panel</h2>
+
+    <a href="https://t.me/online_income_bd1234" target="_blank" class="tg-btn">✈️ Join Telegram 1</a>
+    <a href="https://t.me/encome_tricks0" target="_blank" class="tg-btn" style="background:#0077b5;">✈️ Join Telegram 2</a>
+
+    <div class="admin-section">
+        <div class="admin-item">
+            <span>Admin 1:</span>
+            <span>TAMIM</span>
+        </div>
+        <div class="admin-item">
+            <span>Main Admin:</span>
+            <span class="main-admin">ARAFAT</span>
+        </div>
+    </div>
+
+    <a href="https://www.instagram.com/accounts/logout/" target="_blank" class="btn btn-clear">Data Clear</a>
+    <a href="https://accountscenter.instagram.com/password_and_security/two_factor/" target="_blank" class="btn btn-2fa">2 Fa On</a>
+</div>
+
+</body>
+</html>
