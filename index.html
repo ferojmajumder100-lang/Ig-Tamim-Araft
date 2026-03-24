@@ -3,103 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ig-Tamim-Arafat Admin Panel</title>
+    <title>Ig-Control Pro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    
     <style>
+        * { box-sizing: border-box; }
         body {
             margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(to bottom, #141e30, #243b55);
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #080a10;
             height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
             color: white;
+            overflow: hidden;
         }
 
         .container {
             width: 90%;
-            max-width: 350px;
+            max-width: 310px;
             background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(20px);
-            border-radius: 25px;
-            padding: 25px;
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            padding: 15px;
             border: 1px solid rgba(255, 255, 255, 0.1);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
             text-align: center;
         }
 
-        /* Telegram Buttons */
-        .tg-btn {
-            display: block;
+        h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 14px;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            color: #00d2ff;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             text-decoration: none;
-            padding: 12px;
-            margin-bottom: 10px;
-            border-radius: 12px;
-            font-weight: bold;
+            padding: 9px 12px;
+            margin-bottom: 8px;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 11px;
             color: white;
-            background: #0088cc;
-            transition: 0.3s;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: 0.2s;
         }
 
-        /* Admin Info */
-        .admin-section {
-            margin: 20px 0;
+        .btn-tg { border-left: 3px solid #0088cc; }
+        .btn-clear { border-left: 3px solid #ff416c; }
+        .btn-2fa { border-left: 3px solid #00b09b; }
+
+        /* অ্যাডমিন সেকশন আপডেট */
+        .admin-box {
             background: rgba(0, 0, 0, 0.2);
-            padding: 15px;
-            border-radius: 15px;
+            border-radius: 12px;
+            padding: 8px 12px;
+            margin: 12px 0;
         }
 
-        .admin-item {
+        .admin-row {
             display: flex;
             justify-content: space-between;
-            margin: 5px 0;
-            font-size: 14px;
+            align-items: center;
+            margin: 4px 0;
         }
 
-        .main-admin {
+        .name {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 12px;
+        }
+
+        .arafat-glow {
             color: #00d2ff;
-            font-weight: bold;
+            text-shadow: 0 0 8px rgba(0, 210, 255, 0.5);
         }
 
-        /* Bottom Buttons */
-        .btn {
-            display: block;
-            text-decoration: none;
-            padding: 15px;
-            margin-top: 10px;
-            border-radius: 12px;
+        /* স্ট্যাটাস ব্যাজ */
+        .badge {
+            font-size: 8px;
+            padding: 2px 6px;
+            border-radius: 4px;
             font-weight: bold;
-            color: white;
-            transition: 0.3s;
+            text-transform: uppercase;
+            margin-left: 5px;
         }
+        .badge-owner { background: #00d2ff; color: #000; }
+        .badge-admin { background: rgba(255, 255, 255, 0.2); color: #fff; }
 
-        .btn-clear { background: #ff4757; }
-        .btn-2fa { background: #2ed573; }
-
-        .btn:active { transform: scale(0.95); }
+        .emoji-sm { font-size: 14px; }
+        .btn:active { transform: scale(0.96); }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h2 style="margin-top: 0;">Admin Panel</h2>
+    <h2>CONTROL CENTER</h2>
 
-    <a href="https://t.me/online_income_bd1234" target="_blank" class="tg-btn">✈️ Join Telegram 1</a>
-    <a href="https://t.me/encome_tricks0" target="_blank" class="tg-btn" style="background:#0077b5;">✈️ Join Telegram 2</a>
+    <a href="https://t.me/online_income_bd1234" target="_blank" class="btn btn-tg">
+        <span>🚀 JOIN TG 1</span>
+        <span class="emoji-sm">✈️</span>
+    </a>
+    <a href="https://t.me/encome_tricks0" target="_blank" class="btn btn-tg">
+        <span>📢 JOIN TG 2</span>
+        <span class="emoji-sm">🎯</span>
+    </a>
 
-    <div class="admin-section">
-        <div class="admin-item">
-            <span>Admin 1:</span>
-            <span>TAMIM</span>
+    <div class="admin-box">
+        <div class="admin-row">
+            <div>
+                <span class="name">TAMIM</span>
+                <span class="badge badge-admin">ADMIN</span>
+            </div>
+            <span class="emoji-sm">🛡️</span>
         </div>
-        <div class="admin-item">
-            <span>Main Admin:</span>
-            <span class="main-admin">ARAFAT</span>
+
+        <div class="admin-row">
+            <div>
+                <span class="name arafat-glow">ARAFAT</span>
+                <span class="badge badge-owner">OWNER</span>
+            </div>
+            <span class="emoji-sm">👑</span>
         </div>
     </div>
 
-    <a href="https://www.instagram.com/accounts/logout/" target="_blank" class="btn btn-clear">Data Clear</a>
-    <a href="https://accountscenter.instagram.com/password_and_security/two_factor/" target="_blank" class="btn btn-2fa">2 Fa On</a>
+    <a href="https://www.instagram.com/accounts/logout/" target="_blank" class="btn btn-clear">
+        <span>🚫 DATA CLEAR</span>
+        <span class="emoji-sm">🔥</span>
+    </a>
+    <a href="https://accountscenter.instagram.com/password_and_security/two_factor/" target="_blank" class="btn btn-2fa">
+        <span>🔐 2FA ACTIVE</span>
+        <span class="emoji-sm">✅</span>
+    </a>
 </div>
 
 </body>
